@@ -5,7 +5,16 @@ const sections = navLinks
     .filter(Boolean);
 
 function updateNavbarSize() {
-    navbar.classList.toggle("is-compact", window.scrollY > 50);
+    const y = window.scrollY;
+    const isCompact = navbar.classList.contains("is-compact");
+
+    // Hysteresis stops flicker: shrinking the bar moves content up,
+    // which can drop scrollY under a single threshold and bounce forever.
+    if (!isCompact && y > 80) {
+        navbar.classList.add("is-compact");
+    } else if (isCompact && y < 20) {
+        navbar.classList.remove("is-compact");
+    }
 }
 
 function updateActiveNav() {
