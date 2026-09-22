@@ -4,10 +4,210 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Anushka Nirmalkumar Gosavi | Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header class="site-header">
+            <div class="section-inner header-inner">
+                <a class="logo" href="#home">Anushka</a>
+                <nav class="navbar" aria-label="Primary">
+                    <ul class="navbar-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#media">Media</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="section section--hero">
+                <div class="section-inner vertically-centered">
+                    <p class="eyebrow">Urbana-Champaign, IL</p>
+                    <h1>Anushka Nirmalkumar Gosavi</h1>
+                    <p class="lede">MS in Information Management at UIUC. Former Associate Product Developer at BMC Software, focused on frontend systems, accessible enterprise UI, and AI-assisted workflows.</p>
+                </div>
+            </section>
+
+            <section id="about" class="section section--alt">
+                <div class="section-inner">
+                    <div class="profile-photo-wrap">
+                        <img class="profile-photo" src="assets/profile-photo.png" alt="Anushka Nirmalkumar Gosavi">
+                    </div>
+                    <h2>About</h2>
+                    <p>I am a master's student in Information Management at the University of Illinois Urbana-Champaign. Before UIUC I earned a B.Tech in Computer Science Engineering from Maharashtra Institute of Technology and spent two years at BMC Software building enterprise product experiences.</p>
+
+                    <h3>Education</h3>
+                    <article class="entry">
+                        <h4>University of Illinois Urbana-Champaign</h4>
+                        <p class="entry-meta">M.S. Information Management · GPA 3.94 · Aug 2025 – May 2027</p>
+                    </article>
+                    <article class="entry">
+                        <h4>Maharashtra Institute of Technology</h4>
+                        <p class="entry-meta">B.Tech Computer Science Engineering · GPA 3.98 · Jul 2019 – Jun 2023</p>
+                    </article>
+
+                    <h3>Experience</h3>
+                    <article class="entry">
+                        <h4>Associate Product Developer · BMC Software</h4>
+                        <p class="entry-meta">Jul 2023 – Jul 2025</p>
+                        <p>Powered low-code applications for 400+ enterprise customers with a metadata-driven Angular, TypeScript, and Java runtime. Built HelixGPT by connecting React/TypeScript UI to Python, LLMs, and enterprise REST APIs. Shipped an offline-first PWA, raised automated UI-test coverage from 60% to 90% across 200+ features, and cut accessibility and localization defects across 20+ languages.</p>
+                    </article>
+                    <article class="entry">
+                        <h4>Product Developer Intern · BMC Software</h4>
+                        <p class="entry-meta">Jan 2022 – Jun 2023</p>
+                        <p>Built a full-stack monitoring dashboard with React, Java, Spring Boot, and REST APIs across 100+ Kubernetes workloads, cutting manual operational checks by 50%. Improved peak telemetry throughput by 35% while processing 50K+ events/min, and helped raise deployment success to 95% with Jenkins CI/CD.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-inner">
+                    <h2>Projects</h2>
+                    <div class="carousel">
+                        <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous project">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <article class="carousel-slide">
+                                    <h4>ChronosExchange — Limit Order Book Replay Engine</h4>
+                                    <p class="entry-meta">C++, STL, CMake, data structures and algorithms</p>
+                                    <p>Deterministic C++ replay engine with optimized STL structures. Sustained 2.39M events/sec with correctness validation at 1.60M events/sec.</p>
+                                    <button class="text-btn" type="button" data-open-modal="chronos">Learn more</button>
+                                </article>
+                                <article class="carousel-slide">
+                                    <h4>AI-Powered IT Service Management Agent</h4>
+                                    <p class="entry-meta">React, TypeScript, Python, LLMs, RAG, REST APIs</p>
+                                    <p>User-facing agent that turns natural-language and voice requests into validated actions across 3 enterprise workflows, reducing manual ticketing by about 60%.</p>
+                                    <button class="text-btn" type="button" data-open-modal="itsm">Learn more</button>
+                                </article>
+                                <article class="carousel-slide">
+                                    <h4>Offline-First Enterprise Ticketing PWA</h4>
+                                    <p class="entry-meta">React, TypeScript, service workers, IndexedDB</p>
+                                    <p>Responsive offline-first web app with local persistence, background sync, and recovery so ticket work continues across intermittent connectivity.</p>
+                                    <button class="text-btn" type="button" data-open-modal="pwa">Learn more</button>
+                                </article>
+                                <article class="carousel-slide">
+                                    <h4>Semantic News Aggregation Platform</h4>
+                                    <p class="entry-meta">React, TypeScript, Python, REST APIs, GCP</p>
+                                    <p>Content-discovery interface for 100–150 articles/day, with semantic clustering and generated summaries that cut duplicate content by about 70%.</p>
+                                    <button class="text-btn" type="button" data-open-modal="news">Learn more</button>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn--next" type="button" aria-label="Next project">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <p class="carousel-status" aria-live="polite">1 / 4</p>
+                </div>
+            </section>
+
+            <section id="skills" class="section section--alt">
+                <div class="section-inner">
+                    <h2>Skills</h2>
+                    <div class="columns">
+                        <article class="column-card">
+                            <h4>Languages</h4>
+                            <p>JavaScript, TypeScript, Python, Java, C++, SQL</p>
+                        </article>
+                        <article class="column-card">
+                            <h4>Frontend and UI</h4>
+                            <p>React, Angular, Next.js, HTML5, CSS3, SCSS, responsive design, accessibility, internationalization, PWAs</p>
+                        </article>
+                        <article class="column-card">
+                            <h4>APIs, backend, and cloud</h4>
+                            <p>REST APIs, Node.js, Spring Boot, FastAPI, PostgreSQL, MongoDB, AWS, GCP, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD</p>
+                        </article>
+                        <article class="column-card">
+                            <h4>AI and quality</h4>
+                            <p>Generative AI, RAG, embeddings, Whisper, LangChain, Cypress, Jasmine, Playwright, SonarQube</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="media" class="section">
+                <div class="section-inner">
+                    <h2>Media</h2>
+                    <p>Campus is an information system you walk through: paths, libraries, and lecture halls routing people and ideas. That is the same problem I work on in software — taking messy input and turning it into a path someone can actually follow.</p>
+                    <video class="media-video" controls>
+                        <source src="assets/uiuc-background.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </section>
+
+            <section id="contact" class="section section--alt">
+                <div class="section-inner section-inner--narrow">
+                    <h2>Contact</h2>
+                    <p>Based in Urbana-Champaign, IL.</p>
+                    <p><a href="mailto:agosavi2@illinois.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i> agosavi2@illinois.edu</a></p>
+                    <p><a href="tel:+12174936502"><i class="fa-solid fa-phone" aria-hidden="true"></i> +1 217-493-6502</a></p>
+                    <p><a href="https://www.linkedin.com/in/anushka-nirmalkumar-gosavi-543a1a215/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></p>
+                </div>
+            </section>
+        </main>
+
+        <div class="modal" id="project-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+                <button class="modal-close" type="button" aria-label="Close dialog">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <article class="modal-panel" data-modal="chronos">
+                    <h3 id="modal-heading">ChronosExchange</h3>
+                    <p class="entry-meta">C++, STL, CMake</p>
+                    <p>A deterministic limit-order-book replay engine built to validate matching behavior at scale. Optimized STL data structures and a first-divergence analysis path keep replay faithful to production event order.</p>
+                    <p>Sustained 2.39 million events/sec, with correctness checks holding at 1.60 million events/sec.</p>
+                </article>
+                <article class="modal-panel" data-modal="itsm">
+                    <h3>AI-Powered IT Service Management Agent</h3>
+                    <p class="entry-meta">React, TypeScript, Python, LLMs, RAG</p>
+                    <p>A user-facing agent that turns natural-language and voice requests into validated ticket actions. It combines Whisper transcription, RAG over internal knowledge, and REST APIs across three enterprise workflows.</p>
+                    <p>Reduced manual ticketing steps by about 60%.</p>
+                </article>
+                <article class="modal-panel" data-modal="pwa">
+                    <h3>Offline-First Enterprise Ticketing PWA</h3>
+                    <p class="entry-meta">React, TypeScript, service workers, IndexedDB</p>
+                    <p>A responsive progressive web app that keeps ticket work available during network loss. Local persistence, background sync, and conflict-resilient recovery let users continue after connectivity returns.</p>
+                    <p>Designed for intermittent field and enterprise networks.</p>
+                </article>
+                <article class="modal-panel" data-modal="news">
+                    <h3>Semantic News Aggregation Platform</h3>
+                    <p class="entry-meta">React, TypeScript, Python, REST APIs, GCP</p>
+                    <p>A content-discovery interface that processes 100–150 articles a day. Embeddings and Vertex AI summaries cluster related stories and cut duplicate content by about 70%.</p>
+                    <p>Built as an asynchronous retrieval pipeline with a responsive frontend.</p>
+                </article>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="section-inner footer-inner">
+                <p>&copy; 2026 Anushka Nirmalkumar Gosavi</p>
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anushka-nirmalkumar-gosavi-543a1a215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:agosavi2@illinois.edu" aria-label="Email">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+12174936502" aria-label="Phone">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
